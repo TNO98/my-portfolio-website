@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Malay Sarkar - Portfolio Website
 
-## Getting Started
+A professional single-page portfolio website for Malay Sarkar, a Java Full-Stack Developer specializing in Spring Boot, React/Next.js, PostgreSQL, and AI integrations.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Design**: Clean, professional design with dark/light theme support
+- **Responsive**: Fully responsive design that works on all devices
+- **Performance Optimized**: Built with Next.js 15 and optimized for speed
+- **Professional Content**: Complete portfolio showcasing:
+  - Hero section with tech stack
+  - About section with background and values
+  - Skills organized by categories
+  - Professional experience with detailed achievements
+  - Featured projects with live links
+  - Contact form with validation
+- **Tech Stack Highlights**: 
+  - Java 17, Spring Boot, React/Next.js
+  - PostgreSQL, Docker, AWS/Azure/GCP
+  - AI integrations and automation solutions
+
+## 🛠️ Built With
+
+- **Framework**: Next.js 15 with TypeScript
+- **Styling**: Tailwind CSS with custom CSS variables
+- **Icons**: React Icons (Feather Icons, Simple Icons)
+- **Fonts**: Inter (sans-serif) & JetBrains Mono (monospace)
+- **Deployment**: Optimized for Vercel
+
+## 🏃‍♂️ Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd my-portfolio-website
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles and CSS variables
+│   ├── layout.tsx           # Root layout with fonts and metadata
+│   └── page.tsx             # Main page component
+├── components/
+│   ├── Header.tsx           # Navigation and theme toggle
+│   ├── Hero.tsx             # Hero section with tech showcase
+│   ├── About.tsx            # About section
+│   ├── Skills.tsx           # Technical skills grid
+│   ├── Experience.tsx       # Professional experience timeline
+│   ├── Projects.tsx         # Featured projects showcase
+│   ├── Contact.tsx          # Contact form and information
+│   └── Footer.tsx           # Footer component
+└── assets/
+    └── Malay_Sarkar_CV.md   # CV content source
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Dark/Light Theme**: Automatic system preference detection with manual toggle
+- **Smooth Animations**: CSS animations for better user experience
+- **Professional Color Scheme**: Carefully chosen colors for readability and professionalism
+- **Typography**: Professional fonts optimized for readability
+- **Accessibility**: Proper semantic HTML and ARIA labels
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Deployment
 
-## Learn More
+The application is optimized for deployment on Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Content Management
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All professional content is sourced from `src/assets/Malay_Sarkar_CV.md` and structured into:
+- Personal information and contact details
+- Professional experience and achievements
+- Technical skills and expertise
+- Featured projects and accomplishments
+- Education and certifications
 
-## Deploy on Vercel
+## 📱 Responsive Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Desktop**: Full layout with sidebar navigation
+- **Tablet**: Adapted layout with hamburger menu
+- **Mobile**: Single-column layout optimized for small screens
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Customization
+
+To customize for your own portfolio:
+1. Update content in `src/assets/` with your CV
+2. Modify personal information in components
+3. Update color scheme in `globals.css`
+4. Replace project information and links
+5. Update metadata in `layout.tsx`
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
