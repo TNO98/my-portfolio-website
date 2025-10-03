@@ -5,7 +5,7 @@ export default function Experience() {
     {
       company: 'Alfalabs Technologies LLP',
       position: 'Software Developer',
-      location: 'Kolkata, India (Remote)',
+      location: 'Mumbai, India (Remote)',
       duration: 'Aug 2023 – Present',
       type: 'Full-time',
       achievements: [
