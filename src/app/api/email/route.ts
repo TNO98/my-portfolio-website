@@ -4,6 +4,19 @@ import nodemailer from "nodemailer";
 const POST = async (req: Request) => {
   const { SMTP_EMAIL, SMTP_PASSWORD, MY_EMAIL } = process.env;
 
+  // Check if environment variables are set
+  if (!SMTP_EMAIL || !SMTP_PASSWORD || !MY_EMAIL) {
+    console.error('Missing environment variables:', {
+      SMTP_EMAIL: !!SMTP_EMAIL,
+      SMTP_PASSWORD: !!SMTP_PASSWORD,
+      MY_EMAIL: !!MY_EMAIL
+    });
+    return NextResponse.json(
+      { message: "Server configuration error. Please try again later." },
+      { status: 500 }
+    );
+  }
+
   try {
     const body = await req.json();
     
@@ -86,6 +99,11 @@ Submitted: ${new Date().toLocaleString()}
     });
   } catch (err) {
     console.error('Email sending error:', err);
+    
+    // More detailed error message for debugging
+    const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+    console.error('Detailed error:', errorMessage);
+    
     return NextResponse.json(
       { message: "Failed to send message. Please try again later." },
       { status: 500 }
