@@ -59,7 +59,8 @@ export default function Hero() {
                 View Projects
               </a>
               <a
-                href="/Malay_Sarkar_CV.pdf"
+                // href="/Malay_Sarkar_CV.pdf"
+                 href="#"
                 download="Malay_Sarkar_CV.pdf"
                 className="flex items-center gap-2 border border-border px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-colors duration-200"
               >
